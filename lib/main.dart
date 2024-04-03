@@ -1,4 +1,5 @@
 import 'package:connect_you/App.dart';
+import 'package:connect_you/Pages/dashboard/dashboard.dart';
 import 'package:connect_you/pages/auth/signin.dart';
 import 'package:connect_you/pages/auth/signup.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class Index extends StatelessWidget {
       routes: {
         '/signin': (context) => SignIn(),
         '/signup': (context) => SignUp(),
+        '/dashboard': (context) => Dashboard(),
       },
       initialRoute: '/',
     );

@@ -1,3 +1,4 @@
+import 'package:connect_you/components/styledInput.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -15,6 +16,10 @@ class _SignUpWidgetState extends State<SignUp> {
 
     // Perform signup logic here, such as calling an authentication service
     print('Signing up with Email: $email, Password: $password');
+    Navigator.pushNamed(
+      context,
+      '/dashboard',
+    );
   }
 
   @override
@@ -28,18 +33,14 @@ class _SignUpWidgetState extends State<SignUp> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            TextField(
+            StyledInput(
+              hintText: "name",
               controller: _emailController,
-              decoration: InputDecoration(
-                labelText: 'Email',
-              ),
             ),
             SizedBox(height: 16.0),
-            TextField(
+            StyledInput(
+              hintText: "password",
               controller: _passwordController,
-              decoration: InputDecoration(
-                labelText: 'Password',
-              ),
               obscureText: true,
             ),
             SizedBox(height: 16.0),

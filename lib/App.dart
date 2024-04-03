@@ -10,7 +10,7 @@ class App extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.pushNamed(context, '/signin');
+            Navigator.pushNamed(context, '/signup');
           },
           child: Text('halo'),
         ),
