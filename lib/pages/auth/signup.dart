@@ -7,10 +7,12 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpWidgetState extends State<SignUp> {
+  TextEditingController _nameController = TextEditingController();
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
 
   void _handleSignUp() {
+    String name = _nameController.text.trim();
     String email = _emailController.text.trim();
     String password = _passwordController.text.trim();
 

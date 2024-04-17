@@ -20,11 +20,12 @@ class StyledInput extends StatelessWidget {
       controller: controller,
       obscureText: obscureText,
       decoration: InputDecoration(
+        contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         hintText: hintText,
         prefixIcon: icon != null ? Icon(icon) : null,
-        // border: OutlineInputBorder(
-        //   borderRadius: BorderRadius.circular(8),
-        // ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(40),
+        ),
       ),
     );
   }
